@@ -265,7 +265,7 @@ class Compressor(object):
                             filter_or_command)
                 else:
                     filter = precompiler_class(
-                        content, attrs, filter_type=self.type, charset=charset,
+                        content, filter_type=self.type, charset=charset,
                         filename=filename)
                     return True, filter.input(**kwargs)
 
